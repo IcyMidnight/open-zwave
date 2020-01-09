@@ -84,7 +84,7 @@ V1.10 + V1.11 (12/14/2017)
       <Item label="Disabled" value="0"/>
       <Item label="Enabled" value="1"/>
     </Value>
-    <Value genre="config" index="41" label="Temperature Reporting Threshold" max="39321" min="0" size="4" type="int" units="C/F" value="20">
+    <Value genre="config" index="41" label="Temperature Reporting Threshold" type="byte" size="4" min="0" max="4294967295" value="1310976">
       <Help>Threshold change in temperature to induce an automatic report.  
 			Note: 
 			1. The unit is Fahrenheit for US version, Celsius for EU/AU version.
@@ -175,7 +175,7 @@ V1.10 + V1.11 (12/14/2017)
         <Help lang="fr">Upper Ultraviolet Threshold-fr</Help>
       </BitSet>
     </Value>
-    <Value genre="config" index="49" label="Set the upper limit value of temperature sensor" type="int" value="71681">
+    <Value genre="config" index="49" label="Set the upper limit value of temperature sensor" type="byte" size="4" min="0" max="4294967295" value="18350336">
       <Help>
 			When the measurement is more than this upper limit, which will trigger to sent out a sensor report.
 			High byte is the upper limit value. Low byte is the unit (0x01=Celsius, 0x02=Fahrenheit).
@@ -187,7 +187,7 @@ V1.10 + V1.11 (12/14/2017)
 			E.g. The default upper limit of US version is 82.4F (0X0338), when the measurement is more than 82.4F, it will be triggered to send out a temperature sensor report.
 			</Help>
     </Value>
-    <Value genre="config" index="50" label="Set the lower limit value of temperature sensor" type="int" value="1">
+    <Value genre="config" index="50" label="Set the lower limit value of temperature sensor" type="byte" size="4" min="0" max="4294967295" value="256">
       <Help>
 			When the measurement is less than this lower limit, which will trigger to sent out a sensor report.
 			High byte is the lower limit value. Low byte is the unit (0x01=Celsius, 0x02=Fahrenheit).
